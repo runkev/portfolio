@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
