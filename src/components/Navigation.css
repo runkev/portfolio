@@ -3,9 +3,26 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 200px;
-    background-color: #333;
-    padding: 20px;
+    width: 100px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fffefe;
+  }
+
+  .navigation:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, 
+    rgba(255, 255, 255, 0) 35%, 
+    #9f9f9f 50%,                
+    rgba(128, 128, 128, 0) 65% 
+  );
   }
   
   .navigation ul {
@@ -18,12 +35,14 @@
   }
   
   .navigation a {
-    color: white;
+    color: rgb(150, 150, 150);
+    font-size: 1.25em;
     text-decoration: none;
     transition: color 0.3s;
   }
   
   .navigation a:hover {
-    color: #ff6347;
+    color: #242424;
+    box-shadow: #808080;
   }
   

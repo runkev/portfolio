@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
-// import About from './pages/About';
+import About from './pages/About';
 // import Projects from './pages/Projects';
 // import Contact from './pages/Contact';
 import './App.css';
@@ -12,8 +12,8 @@ const App = () => {
       <Navigation />
       <main>
         <Home />
-        {/* <About />
-        <Projects />
+        <About />
+        {/* <Projects />
         <Contact /> */}
       </main>
     </div>

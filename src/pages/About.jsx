@@ -2,19 +2,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './page.css';
 
-const Home = () => {
+const About = () => {
   return (
     <motion.section 
-      id="home" 
-      className="page"
+      id="about" 
+      className="about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <h1>Welcome to My Portfolio</h1>
-      <p>Scroll down to learn more about me.</p>
+      <h1>About me</h1>
+      <p>Text goes here</p>
     </motion.section>
   );
 };
 
-export default Home;
+export default About;
