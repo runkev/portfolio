@@ -1,12 +1,12 @@
 section {
     height: 100vh;
+    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     transition: opacity 1s ease-in-out;
-    scroll-snap-align: start;
   }
   
   h1 {
