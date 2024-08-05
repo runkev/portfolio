@@ -28,21 +28,34 @@
   .navigation ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    position: relative;
   }
   
   .navigation li {
     margin: 20px 0;
+    position: relative;
   }
   
   .navigation a {
-    color: rgb(150, 150, 150);
+    color: rgb(99, 99, 99);
     font-size: 1.25em;
     text-decoration: none;
     transition: color 0.3s;
+    position: relative;
+    z-index: 1;
   }
   
   .navigation a:hover {
-    color: #242424;
-    box-shadow: #808080;
+    color: #ffffff;
+  }
+
+  .blob {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+    z-index: 0;
   }
   
