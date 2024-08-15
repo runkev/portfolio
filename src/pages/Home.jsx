@@ -1,18 +1,13 @@
-import { motion } from 'framer-motion';
 import './page.css';
 
 const Home = () => {
   return (
-    <motion.section 
-      id="home" 
-      className="home"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+    <div
+
     >
       <h1>Welcome to My Portfolio</h1>
       <p>Scroll down to learn more about me.</p>
-    </motion.section>
+    </div>
   );
 };
 

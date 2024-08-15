@@ -6,7 +6,7 @@ section {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    transition: opacity 1s ease-in-out;
+    /* transition: opacity 1s ease-in-out; */
   }
   
   h1 {

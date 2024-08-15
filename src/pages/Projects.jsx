@@ -1,18 +1,18 @@
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import './page.css';
 
 const Projects = () => {
   return (
-    <motion.section 
+    <div 
       id="projects" 
       className="projects"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // transition={{ duration: 1 }}
     >
       <h1>My Projects</h1>
       <p>Text goes here</p>
-    </motion.section>
+    </div>
   );
 };
 
