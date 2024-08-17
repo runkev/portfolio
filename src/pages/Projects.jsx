@@ -10,7 +10,7 @@ import ProjectCard from '../components/ProjectCard';
 const projects = [
   {
     title: "Petow's Pantry",
-    images: [
+    icons: [
       { src: html_icon, alt: 'HTML icon' },
       { src: css_icon, alt: 'CSS icon' },
       { src: js_icon, alt: 'JavaScript icon' },
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "Petow's Pantry",
-    images: [
+    icons: [
       { src: html_icon, alt: 'HTML icon' },
       { src: css_icon, alt: 'CSS icon' },
       { src: js_icon, alt: 'JavaScript icon' },
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: "Petow's Pantry",
-    images: [
+    icons: [
       { src: html_icon, alt: 'HTML icon' },
       { src: css_icon, alt: 'CSS icon' },
       { src: js_icon, alt: 'JavaScript icon' },
@@ -61,13 +61,15 @@ const Projects = () => {
       // animate={{ opacity: 1 }}
       // transition={{ duration: 1 }}
     >
-      <h1>My Projects</h1>
+      <div className="page-title">
+        <h1>My Projects</h1>
+      </div>
       <div className="project-list">
         {projects.map((project, index) => (
           <ProjectCard 
             key={index}
             title={project.title}
-            images={project.images}
+            icons={project.icons}
             description={project.description}
             links={project.links}
           />

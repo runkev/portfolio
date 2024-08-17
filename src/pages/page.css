@@ -1,3 +1,11 @@
+:root {
+  --background-color: #1C1C1C;
+  --primary-text-color: #E5E5E5;
+  --secondary-text-color: #B0B0B0;
+  --accent-color: #4A4A4A;
+  --highlight-color: #FFFFFF;
+}
+
 section {
     height: 100vh;
     scroll-snap-align: start;
@@ -5,13 +13,20 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* transition: opacity 1s ease-in-out; */
   }
   
   h1 {
     font-size: 3em;
     margin: 0;
+  }
+
+  .page-title {
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    color: var(--primary-text-color);
   }
   
   .project-list {

@@ -1,14 +1,22 @@
+:root {
+  --background-color: #1C1C1C;
+  --primary-text-color: #E5E5E5;
+  --secondary-text-color: #B0B0B0;
+  --accent-color: #4A4A4A;
+  --highlight-color: #FFFFFF;
+}
+
 .navigation {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 200px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #fffefe;
+    border-right: 1px solid var(--background-color);
   }
 
   .navigation:after {
@@ -19,9 +27,9 @@
     height: 100%;
     width: 1px;
     background: linear-gradient(to bottom, 
-    rgba(255, 255, 255, 0) 20%, 
-    #9f9f9f 50%,                
-    rgba(128, 128, 128, 0) 80% 
+    #1C1C1C 20%, 
+    #4A4A4A 50%,                
+    #1C1C1C 80% 
   );
   }
   
@@ -38,7 +46,7 @@
   }
   
   .navigation a {
-    color: rgb(99, 99, 99);
+    color: var(--secondary-text-color);
     text-decoration: none;
     font-size: 1.25em;
     transition: color 0.3s;
@@ -48,7 +56,8 @@
   }
   
   .navigation a:hover {
-    color: #ffffff;
+    color: var(--highlight-color);
+    text-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
   }
 
   .blob {

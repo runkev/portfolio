@@ -98,16 +98,11 @@ const App = () => {
   
   return (
     <div className="app">
-      {/* <Navigation />
-      <main>
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-      </main> */}
       <Router>
-        <Navigation />
-        <AnimatedRoutes />
+        <div className="page-container">
+          <Navigation />
+          <AnimatedRoutes />
+        </div>
       </Router>
     </div>
   );

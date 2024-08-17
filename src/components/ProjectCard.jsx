@@ -1,16 +1,20 @@
 import PropTypes from 'prop-types';
 import './ProjectCard.css';
 
-const ProjectCard = ({ title, images, description, links }) => {
+const ProjectCard = ({ title, icons, description, links }) => {
   return (
     <div className="project-card">
-      <h3>{title}</h3>
-      <div className="project-images">
-        {images.map((image, index) => (
-          <img key={index} src={image} alt={`Project ${index + 1}`} />
+        <div className='title'>
+            <h3>{title}</h3>
+        </div>
+      <div className="project-icons">
+        {icons.map((icon, index) => (
+          <img key={index} src={icon.src} alt={icon.alt} />
         ))}
       </div>
-      <p>{description}</p>
+      <div className='project-details'>
+        <p>{description}</p>
+      </div>
       <div className="project-links">
         {links.map((link, index) => (
           <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
@@ -24,7 +28,7 @@ const ProjectCard = ({ title, images, description, links }) => {
 
 ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
-    images: PropTypes.arrayOf(
+    icons: PropTypes.arrayOf(
         PropTypes.shape({
             src: PropTypes.string.isRequired,
             alt: PropTypes.string.isRequired
