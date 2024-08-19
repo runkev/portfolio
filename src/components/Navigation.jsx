@@ -14,11 +14,9 @@ const Navigation = () => {
     <nav className="navigation" >
       <ul>
         {Object.entries(pages).map(([page, url]) => (
-          <li 
-            key={page} 
-          >
-            <Link to={url}>{page}</Link>
-          </li>
+          <Link to={url} key={page}>
+            <li>{page}</li>
+          </Link>
         ))}
       </ul>
     </nav>

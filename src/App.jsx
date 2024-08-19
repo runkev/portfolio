@@ -99,7 +99,7 @@ const App = () => {
   return (
     <div className="app">
       <Router>
-        <div className="page-container">
+        <div className="content-container">
           <Navigation />
           <AnimatedRoutes />
         </div>

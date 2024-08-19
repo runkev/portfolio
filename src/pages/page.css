@@ -30,11 +30,21 @@ h1 {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Default to 3 equal columns */
   gap: 1rem;
   padding: 1rem;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 740px) {
+  .project-list {
+    grid-template-columns: 1fr; /* 1 column for narrow screens */
+  }
 }

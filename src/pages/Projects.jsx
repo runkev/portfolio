@@ -50,6 +50,48 @@ const projects = [
       { url: 'https://github.com/runkev/petows-pantry-next', text: 'GitHub' }
     ]
   },
+  {
+    title: "Petow's Pantry",
+    icons: [
+      { src: html_icon, alt: 'HTML icon' },
+      { src: css_icon, alt: 'CSS icon' },
+      { src: js_icon, alt: 'JavaScript icon' },
+      { src: react_icon, alt: 'React icon' }
+    ],
+    description: 'A mobile-friendly web app that allows users to easily search for and follow recipes in kitchen settings.',
+    links: [
+      { url: 'https://www.petowspantry.com/', text: 'Website' },
+      { url: 'https://github.com/runkev/petows-pantry-next', text: 'GitHub' }
+    ]
+  },
+  {
+    title: "Petow's Pantry",
+    icons: [
+      { src: html_icon, alt: 'HTML icon' },
+      { src: css_icon, alt: 'CSS icon' },
+      { src: js_icon, alt: 'JavaScript icon' },
+      { src: react_icon, alt: 'React icon' }
+    ],
+    description: 'A mobile-friendly web app that allows users to easily search for and follow recipes in kitchen settings.',
+    links: [
+      { url: 'https://www.petowspantry.com/', text: 'Website' },
+      { url: 'https://github.com/runkev/petows-pantry-next', text: 'GitHub' }
+    ]
+  },
+  {
+    title: "Petow's Pantry",
+    icons: [
+      { src: html_icon, alt: 'HTML icon' },
+      { src: css_icon, alt: 'CSS icon' },
+      { src: js_icon, alt: 'JavaScript icon' },
+      { src: react_icon, alt: 'React icon' }
+    ],
+    description: 'A mobile-friendly web app that allows users to easily search for and follow recipes in kitchen settings.',
+    links: [
+      { url: 'https://www.petowspantry.com/', text: 'Website' },
+      { url: 'https://github.com/runkev/petows-pantry-next', text: 'GitHub' }
+    ]
+  },
 ]
 
 const Projects = () => {
