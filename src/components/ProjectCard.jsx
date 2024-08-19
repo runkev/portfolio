@@ -9,7 +9,10 @@ const ProjectCard = ({ title, icons, description, links }) => {
         </div>
       <div className="project-icons">
         {icons.map((icon, index) => (
-          <img key={index} src={icon.src} alt={icon.alt} />
+          <div key={index} className="icon-wrapper">
+            <img src={icon.src} alt={icon.alt} />
+            <span className="tooltip">{icon.alt}</span>
+          </div>
         ))}
       </div>
       <div className='project-details'>
@@ -17,9 +20,12 @@ const ProjectCard = ({ title, icons, description, links }) => {
       </div>
       <div className="project-links">
         {links.map((link, index) => (
+          <div key={index} className="icon-wrapper">
           <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-            {link.text}
+            <img src={link.src} alt={link.alt} />
           </a>
+          <span className="tooltip">{link.alt}</span>
+          </div>
         ))}
       </div>
     </div>

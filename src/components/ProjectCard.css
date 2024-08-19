@@ -16,6 +16,12 @@
     border: var(--accent-color) solid 3px;
     background-color: var(--background-color);
     box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
 
 .title {
@@ -44,14 +50,13 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem
+    padding-top: 1rem
 }
 
 .project-icons img {
     width: 24px;
     height: 24px;
     object-fit: contain;
-
 }
 
 .project-details {
@@ -64,5 +69,50 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+}
+
+.project-links img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+  
+.icon-wrapper img {
+    display: block;
+    cursor: pointer;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%) translateY(20%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.8rem; /* Adjust font size */
+    z-index: 1; /* Ensure the tooltip appears above other elements */
+}
+
+.icon-wrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-links .tooltip {
+    transform: translateX(-50%) translateY(60%);
 }

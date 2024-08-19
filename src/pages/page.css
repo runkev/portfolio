@@ -31,7 +31,7 @@ h1 {
 .project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Default to 3 equal columns */
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
