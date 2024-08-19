@@ -31,11 +31,10 @@ h1 {
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   padding: 1rem;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   width: 100%;
   box-sizing: border-box;
 }

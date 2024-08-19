@@ -52,20 +52,11 @@
     transition: color 0.3s;
     position: relative;
     z-index: 1;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
   }
   
   .navigation a:hover {
     color: var(--highlight-color);
     text-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
-  }
-
-  .blob {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-    z-index: 0;
-    transform: translate(-20%, -20%);
   }
   
