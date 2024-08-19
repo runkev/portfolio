@@ -7,17 +7,17 @@ import github_icon from '../assets/icons/github.png';
 import external_link_icon from '../assets/icons/external_link.png';
 import nextjs_icon from '../assets/icons/nextjs.png';
 import java_icon from '../assets/icons/java.png';
+import tailwind_icon from '../assets/icons/tailwind.png';
 
 const projects = [
   {
     id: 1,
     title: "Petow's Pantry",
     icons: [
-      { src: html_icon, alt: 'HTML' },
-      { src: css_icon, alt: 'CSS' },
       { src: ts_icon, alt: 'TypeScript' },
       { src: react_icon, alt: 'React.js' },
-      { src: nextjs_icon, alt: 'Next.js' }
+      { src: nextjs_icon, alt: 'Next.js' },
+      { src: tailwind_icon, alt: 'Tailwind CSS' },
     ],
     description: 'A mobile-friendly web app that allows users to easily search for and follow recipes in kitchen settings.',
     links: [
@@ -34,6 +34,20 @@ const projects = [
     description: 'A plugin for RuneLite (an open-source desktop application) that helps players of the game Old School RuneScape with the Fight Cave minigame.',
     links: [
       { url: 'https://github.com/runkev/fight-cave-helper', alt: 'GitHub', src: github_icon }
+    ]
+  },
+  {
+    id: 3,
+    title: "MMS Careers",
+    icons: [
+      { src: ts_icon, alt: 'TypeScript' },
+      { src: react_icon, alt: 'React.js' },
+      { src: nextjs_icon, alt: 'Next.js' },
+      { src: tailwind_icon, alt: 'Tailwind CSS' }
+    ],
+    description: 'A mobile-friendly web app that allows users to search for and apply to job listings.',
+    links: [
+      { url: 'https://careers.mailmanagementservices.com/', alt: 'Website', src: external_link_icon }
     ]
   }
 ];
