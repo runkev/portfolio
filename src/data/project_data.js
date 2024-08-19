@@ -27,17 +27,6 @@ const projects = [
   },
   {
     id: 2,
-    title: "Fight Cave Helper",
-    icons: [
-      { src: java_icon, alt: 'Java' }
-    ],
-    description: 'A plugin for RuneLite (an open-source desktop application) that helps players of the game Old School RuneScape with the Fight Cave minigame.',
-    links: [
-      { url: 'https://github.com/runkev/fight-cave-helper', alt: 'GitHub', src: github_icon }
-    ]
-  },
-  {
-    id: 3,
     title: "MMS Careers",
     icons: [
       { src: ts_icon, alt: 'TypeScript' },
@@ -49,7 +38,18 @@ const projects = [
     links: [
       { url: 'https://careers.mailmanagementservices.com/', alt: 'Website', src: external_link_icon }
     ]
-  }
+  },
+  {
+    id: 3,
+    title: "Fight Cave Helper",
+    icons: [
+      { src: java_icon, alt: 'Java' }
+    ],
+    description: 'A plugin for RuneLite (an open-source desktop application) that helps players of the game Old School RuneScape with the Fight Cave minigame.',
+    links: [
+      { url: 'https://github.com/runkev/fight-cave-helper', alt: 'GitHub', src: github_icon }
+    ]
+  },
 ];
 
 export default projects;
