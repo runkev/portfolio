@@ -57,9 +57,6 @@ const Projects = () => {
     <div 
       id="projects" 
       className="projects"
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // transition={{ duration: 1 }}
     >
       <div className="page-title">
         <h1>My Projects</h1>
