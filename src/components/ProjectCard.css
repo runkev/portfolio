@@ -77,6 +77,11 @@
     padding: 0.5rem;
 }
 
+.project-links a {
+    position: relative;
+    display: inline-block;
+}
+
 .link-website {
     margin-left: auto;
 }
@@ -100,9 +105,9 @@
     border-radius: 5px;
     padding: 5px 10px;
     position: absolute;
-    bottom: 125%; /* Position above the icon */
+    bottom: 100%; /* Position above the icon */
     left: 50%;
-    transform: translateX(-50%) translateY(20%);
+    transform: translateX(-50%);
     white-space: nowrap;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -115,6 +120,7 @@
     opacity: 1;
 }
 
-.project-links .tooltip {
-    transform: translateX(-50%) translateY(60%);
+.project-links a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }

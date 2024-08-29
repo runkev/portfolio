@@ -51,9 +51,10 @@ ProjectCard.propTypes = {
     links: PropTypes.arrayOf(
       PropTypes.shape({
         url: PropTypes.string.isRequired,
-        text: PropTypes.string.isRequired
+        alt: PropTypes.string.isRequired,
+        src: PropTypes.string.isRequired
       })
-    ).isRequired
+    ).isRequired,
   };
 
 export default ProjectCard;
