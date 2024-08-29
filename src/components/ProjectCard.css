@@ -67,7 +67,6 @@
 
 .project-links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -78,6 +77,9 @@
     padding: 0.5rem;
 }
 
+.link-website {
+    margin-left: auto;
+}
 
 .icon-wrapper {
     position: relative;

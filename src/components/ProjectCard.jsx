@@ -2,6 +2,9 @@ import PropTypes from 'prop-types';
 import './ProjectCard.css';
 
 const ProjectCard = ({ title, icons, description, links }) => {
+  const githubLink = links.find(link => link.alt === 'GitHub');
+  const externalLink = links.find(link => link.alt !== 'GitHub');
+
   return (
     <div className="project-card">
         <div className='title'>
@@ -19,14 +22,18 @@ const ProjectCard = ({ title, icons, description, links }) => {
         <p>{description}</p>
       </div>
       <div className="project-links">
-        {links.map((link, index) => (
-          <div key={index} className="icon-wrapper">
-          <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-            <img src={link.src} alt={link.alt} />
+        {githubLink && (
+          <a href={githubLink.url} target="_blank" rel="noopener noreferrer" className="link-github">
+            <img src={githubLink.src} alt={githubLink.alt} />
+            <span className="tooltip">{githubLink.alt}</span>
           </a>
-          <span className="tooltip">{link.alt}</span>
-          </div>
-        ))}
+        )}
+        {externalLink && (
+          <a href={externalLink.url} target="_blank" rel="noopener noreferrer" className="link-website">
+            <img src={externalLink.src} alt={externalLink.alt} />
+            <span className="tooltip">{externalLink.alt}</span>
+          </a>
+        )}
       </div>
     </div>
   );
