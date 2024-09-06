@@ -5,8 +5,8 @@ const Home = () => {
     <div
 
     >
-      <h1>Welcome to My Portfolio</h1>
-      <p>Scroll down to learn more about me.</p>
+      <h1>Hi, I&apos;m Kevin Petow</h1>
+      <h3>a software engineer</h3>
     </div>
   );
 };
