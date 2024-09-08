@@ -21,6 +21,12 @@ h1 {
   margin: 0;
 }
 
+.subtitle {
+  font-size: 1.25em;
+  margin: 5px;
+  text-align: center;
+}
+
 .page-title {
   font-size: 1em;
   margin: 0;
@@ -48,3 +54,48 @@ h1 {
     grid-template-columns: 1fr; /* 1 column for narrow screens */
   }
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--background-color);
+  box-shadow: 0 0 1.5rem rgba(255, 255, 255, 0.1);
+}
+
+input, textarea {
+  padding: 0.25rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--secondary-text-color);
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+

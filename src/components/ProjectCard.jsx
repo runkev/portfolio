@@ -13,7 +13,7 @@ const ProjectCard = ({ title, icons, description, links }) => {
       <div className="project-icons">
         {icons.map((icon, index) => (
           <div key={index} className="icon-wrapper">
-            <img src={icon.src} alt={icon.alt} />
+            <img src={icon.src} loading="lazy" alt={icon.alt} />
             <span className="tooltip">{icon.alt}</span>
           </div>
         ))}
@@ -24,13 +24,13 @@ const ProjectCard = ({ title, icons, description, links }) => {
       <div className="project-links">
         {githubLink && (
           <a href={githubLink.url} target="_blank" rel="noopener noreferrer" className="link-github">
-            <img src={githubLink.src} alt={githubLink.alt} />
+            <img src={githubLink.src} loading="lazy" alt={githubLink.alt} />
             <span className="tooltip">{githubLink.alt}</span>
           </a>
         )}
         {externalLink && (
           <a href={externalLink.url} target="_blank" rel="noopener noreferrer" className="link-website">
-            <img src={externalLink.src} alt={externalLink.alt} />
+            <img src={externalLink.src} loading="lazy" alt={externalLink.alt} />
             <span className="tooltip">{externalLink.alt}</span>
           </a>
         )}
