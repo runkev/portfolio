@@ -4,7 +4,6 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
 import './App.css';
 
 const pageVariants = {
