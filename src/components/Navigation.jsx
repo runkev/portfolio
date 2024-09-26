@@ -5,9 +5,8 @@ const Navigation = () => {
 
   const pages = {
     Home: '/',
-    About: 'about',
     Projects: 'projects',
-    Contact: 'contact'
+    About: 'about',
   }
 
   return (

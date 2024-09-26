@@ -78,7 +78,7 @@ const AnimatedRoutes = () => {
             </motion.section>
           }
         />
-        <Route
+        {/* <Route
           path="/contact"
           element={
             <motion.section
@@ -91,7 +91,7 @@ const AnimatedRoutes = () => {
               <Contact />
             </motion.section>
           }
-        />
+        /> */}
       </Routes>
     </AnimatePresence>
   )
