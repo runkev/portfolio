@@ -12,8 +12,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* scroll-snap-align: start; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
   
 h1 {
@@ -49,14 +48,10 @@ h1 {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 850px) {
   .project-list {
     grid-template-columns: 1fr; /* 1 column for narrow screens */
   }
 }
 
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 

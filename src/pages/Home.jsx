@@ -2,9 +2,7 @@ import './page.css';
 
 const Home = () => {
   return (
-    <div
-
-    >
+    <div>
       <h1>Hi, I&apos;m Kevin Petow</h1>
       <h3>a software engineer</h3>
     </div>
